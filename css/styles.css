@@ -1,7 +1,11 @@
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    max-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+
+body {
+  background-image: url(../img/background.jpg);
 }
 
 #header {
@@ -15,7 +19,7 @@ html, body {
   height: 66vh;
 }
 
-#rightside{
+#rightside {
   background-color: rgb(235, 235, 235);
   text-align: center;
   height: 66vh
@@ -29,8 +33,9 @@ html, body {
   padding-top: 25%;
 }
 
-#label{
-font-size: 4vh;
+#label {
+  font-size: 4vh;
+  color: rgb(233, 233, 233);
 }
 
 #button {
@@ -40,15 +45,21 @@ font-size: 4vh;
   font-size: 14px;
   text-align: center;
   height: 5vh;
-
+  background-color: rgb(134, 132, 132);
+  color: rgb(237, 232, 232);
+  font-family: sans-serif;
 }
 
 #number {
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 1px;
   vertical-align: middle;
   font-size: 14px;
   text-align: center;
   height: 5vh;
   background-color: rgba(235, 235, 235, 0.8);
+}
+
+#output {
+  color: rgb(224, 224, 224);
 }
