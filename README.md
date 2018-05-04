@@ -13,16 +13,19 @@
 ## "Plain English" specs
 
 The program checks whether a number is divisible by 3 and replaces it with ping.
-###Input Example: ...9
-###Output Example: ...ping
+
+Input Example: ...9
+Output Example: ...ping
 
 The program checks whether a number is divisible by 5 and replaces it with pong.
-###Input Example: ...10
-###Output Example: ...pong
+
+Input Example: ...10
+Output Example: ...pong
 
 The program checks whether a number is divisible by 15 and replaces it with pingpong.
-###Input Example: ...30
-###Output Example: ...pingpong
+
+Input Example: ...30
+Output Example: ...pingpong
 
 ## Setup/Installation Requirements
 
