@@ -1,0 +1,44 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#header {
+  text-align: center;
+}
+
+#sidebar {
+  padding-top: 5%;
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  height: 65vh;
+}
+
+#main {
+  text-align: center;
+}
+
+#better {
+  padding-top: 25%;
+}
+#label{
+font-size: 4vh;
+}
+
+#button {
+  border: 1px solid transparent;
+  border-radius: 1px;
+  vertical-align: middle;
+  font-size: 14px;
+  text-align: center;
+  height: 5vh;
+}
+
+#numberinput {
+  border: 1px solid ;
+  border-radius: 1px;
+  vertical-align: middle;
+  font-size: 14px;
+  text-align: center;
+  height: 5vh;
+}

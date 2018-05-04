@@ -8,16 +8,11 @@
     <title>PingPong</title>
   </head>
   <body>
-    <div id="header">
+    <div class="jumbotron" id="header">
         <h1>Ping-Pong</h1>
     </div>
 
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12" id="empty">
-        </div>
-      </div>
+    <div class="container-fluid">
 
       <div class="row">
         <div class="col-md-4">
@@ -33,33 +28,41 @@
           </div>
 
         </div>
+        <div id="main">
+          <div class="col-md-4">
+            <div class="log">
+              <form id="better">
+                <label for="number" id="label">Enter your number:</label>
+                <input type="number"  placeholder="Enter your number" id="numberinput">
+                <button type="submit" id="button">Let's Play!</button>
+              </form>
+            </div>
+          </div>
 
-        <div class="col-md-4">
-          <h1>Let's play!</h1>
-          <h3>Rules:</h3>
-          <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
-          <ol>
-            <li>Numbers divisible by 3 become "ping"</li>
-            <li>Numbers divisible by 5 become "pong"</li>
-            <li>Numbers divisible by 15 become "pingpong"</li>
-          </ol>
-          <div class="log">
-            <form>
-              <label for="number">Enter your number:</label>
-              <input type="number"  placeholder="Enter your number" id="number">
-              <button type="submit">Let's Play!</button>
-            </form>
+
+          <div class="col-md-4">
+            <h1>Let's play!</h1>
+            <h3>Rules:</h3>
+            <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+            <ol>
+              <li>Numbers divisible by 3 become "ping"</li>
+              <li>Numbers divisible by 5 become "pong"</li>
+              <li>Numbers divisible by 15 become "pingpong"</li>
+            </ol>
           </div>
         </div>
-      </div>
 
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="output">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="output">
+            </div>
           </div>
         </div>
-      </div>
+
+    </div>
+
+
+
 
 
     </div>
