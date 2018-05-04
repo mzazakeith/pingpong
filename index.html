@@ -3,36 +3,65 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>PingPong</title>
   </head>
   <body>
-    <h1>Ping-Pong</h1>
+    <div id="header">
+        <h1>Ping-Pong</h1>
+    </div>
 
-    <h2>About Ping Pong</h2>
-    <h3>Created by:</h3>
-    <p>Keith Mzaza</p>
-    <h3>GitHub Username/URL:</h3>
-    <p>mzazakeith</p>
-    <h3>Level 2 Test for:</h3>
-    <p>Javascript</p>
+    <div class="container">
 
-  <h1>Let's play!</h1>
-  <h3>Rules:</h3>
-  <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
-  <ol>
-    <li>Numbers divisible by 3 become "ping"</li>
-    <li>Numbers divisible by 5 become "pong"</li>
-    <li>Numbers divisible by 15 become "pingpong"</li>
-  </ol>
+      <div class="row">
+        <div class="col-md-12" id="empty">
+        </div>
+      </div>
 
-  <form>
-    <label for="number">Enter your number:</label>
-    <input type="text"  placeholder="Enter your number">
-    <button type="submit">Let's Play!</button>
-  </form>
+      <div class="row">
+        <div class="col-md-4">
+
+          <div id="sidebar">
+            <h2>About Ping Pong</h2>
+            <h3>Created by:</h3>
+            <p>Keith Mzaza</p>
+            <h3>GitHub Username/URL:</h3>
+            <p>mzazakeith</p>
+            <h3>Level 2 Test for:</h3>
+            <p>Javascript</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <h1>Let's play!</h1>
+          <h3>Rules:</h3>
+          <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+          <ol>
+            <li>Numbers divisible by 3 become "ping"</li>
+            <li>Numbers divisible by 5 become "pong"</li>
+            <li>Numbers divisible by 15 become "pingpong"</li>
+          </ol>
+          <div class="log">
+            <form>
+              <label for="number">Enter your number:</label>
+              <input type="number"  placeholder="Enter your number" id="number">
+              <button type="submit">Let's Play!</button>
+            </form>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="row">
+        <div class="col-md-12">
+          <div class="output">
+          </div>
+        </div>
+      </div>
 
+
+    </div>
   </body>
 </html>
