@@ -1,33 +1,34 @@
-//business logic
- var countTonumber;
-function condition() {
- for (var count = 1; count <= countTonumber; count++) {
-   if (count % 15 == 0) {
-          $("#output").append('pingpong  <br/>');
+//Business logic
 
-   } else if (count % 5 == 0) {
-               $("#output").append('pong  <br/>');
+var numberEntered;
 
-   } else if (count % 3 == 0) {
-     $("#output").append('ping  <br/>');
+function play() {
+  for (var range = 1; range <= numberEntered; range++) {
+    if (range % 15 == 0) {
+      $("#output").append('pingpong  <br/>');
 
-   } else {
-     $("#output").append(count.toString() +'<br/>');
-   }
+    } else if (range % 5 == 0) {
+      $("#output").append('pong  <br/>');
 
- }
+    } else if (range % 3 == 0) {
+      $("#output").append('ping  <br/>');
+
+    } else {
+      $("#output").append(range.toString() + '<br/>');
+    }
+  }
 }
 
 
 //UI logic
 
-$(document).ready(function(){
-$("form").submit(function(event){
-countTonumber=$("input#number").val();
-$("#output").text('');
-condition();
-$("input#number").val('');
-event.preventDefault();
-});
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    numberEntered = $("input#number").val();
+    $("#output").text('');
+    play();
+    $("input#number").val('');
+    event.preventDefault();
+  });
 
 });
