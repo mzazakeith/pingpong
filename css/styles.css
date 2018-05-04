@@ -1,6 +1,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    max-height: 100%;
 }
 
 #header {
@@ -11,7 +12,13 @@ html, body {
   padding-top: 5%;
   background-color: rgb(235, 235, 235);
   text-align: center;
-  height: 65vh;
+  height: 66vh;
+}
+
+#rightside{
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  height: 66vh
 }
 
 #main {
@@ -21,6 +28,7 @@ html, body {
 #better {
   padding-top: 25%;
 }
+
 #label{
 font-size: 4vh;
 }
@@ -32,13 +40,15 @@ font-size: 4vh;
   font-size: 14px;
   text-align: center;
   height: 5vh;
+
 }
 
-#numberinput {
+#number {
   border: 1px solid ;
   border-radius: 1px;
   vertical-align: middle;
   font-size: 14px;
   text-align: center;
   height: 5vh;
+  background-color: rgba(235, 235, 235, 0.8);
 }

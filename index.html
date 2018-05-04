@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>PingPong</title>
   </head>
   <body>
     <div class="jumbotron" id="header">
-        <h1>Ping-Pong</h1>
+        <h1 >Ping-Pong</h1>
     </div>
 
     <div class="container-fluid">
@@ -30,17 +32,17 @@
         </div>
         <div id="main">
           <div class="col-md-4">
-            <div class="log">
               <form id="better">
                 <label for="number" id="label">Enter your number:</label>
-                <input type="number"  placeholder="Enter your number" id="numberinput">
+                <input type="number" id="number" placeholder="Enter a number" >
                 <button type="submit" id="button">Let's Play!</button>
               </form>
-            </div>
+              <div id="output">
+              </div>
           </div>
 
 
-          <div class="col-md-4">
+          <div class="col-md-4" id="rightside">
             <h1>Let's play!</h1>
             <h3>Rules:</h3>
             <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
@@ -51,19 +53,6 @@
             </ol>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-8">
-            <div class="output">
-            </div>
-          </div>
-        </div>
-
-    </div>
-
-
-
-
 
     </div>
   </body>
